@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mariadb:
+    image: mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: oauth2
+      MARIADB_USER: oauth2
+      MARIADB_PASSWORD: oauth2
+      MARIADB_DATABASE: oauth2
+    ports:
+      - "3306:3306"
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
