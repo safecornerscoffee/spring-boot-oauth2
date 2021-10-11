@@ -44,8 +44,7 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
         alreadySetup = true;
     }
 
-    @Transactional
-    Privilege createPrivilegeIfNotFound(String name) {
+    private Privilege createPrivilegeIfNotFound(String name) {
         return privilegeRepository.findByName(name)
                 .orElseGet(() -> {
                     Privilege privilege = new Privilege(name);
@@ -53,8 +52,7 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
                 });
     }
 
-    @Transactional
-    Role createRoleIfNotFound(String name, Collection<Privilege> privileges) {
+    private Role createRoleIfNotFound(String name, Collection<Privilege> privileges) {
         return roleRepository.findByName(name)
                 .orElseGet(() -> {
                     Role role = new Role(name);

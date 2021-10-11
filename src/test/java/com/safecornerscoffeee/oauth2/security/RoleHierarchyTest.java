@@ -13,7 +13,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class RoleHierarchyTest {
+class RoleHierarchyTest {
 
     @Autowired
     MockMvc mockMvc;
@@ -21,7 +21,7 @@ public class RoleHierarchyTest {
     @Test
     @WithMockMemberDetails(authorities = "ROLE_MANAGER")
     void manager_role_should_access_user_role_resources() throws Exception {
-        mockMvc.perform(get("/user"))
+        mockMvc.perform(get("/role/user"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
@@ -29,7 +29,7 @@ public class RoleHierarchyTest {
     @Test
     @WithMockMemberDetails(authorities = "ROLE_ADMIN")
     void admin_role_should_access_user_role_resources() throws Exception {
-        mockMvc.perform(get("/user"))
+        mockMvc.perform(get("/role/user"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }

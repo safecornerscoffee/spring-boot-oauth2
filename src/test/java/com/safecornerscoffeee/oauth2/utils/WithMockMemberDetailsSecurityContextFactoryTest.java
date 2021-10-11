@@ -8,10 +8,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
-public class WithMockMemberDetailsSecurityContextFactoryTest {
+class WithMockMemberDetailsSecurityContextFactoryTest {
 
     @Test
     @WithMockMemberDetails
@@ -30,7 +30,7 @@ public class WithMockMemberDetailsSecurityContextFactoryTest {
 
         assertThat(principal.getId()).isEqualTo(1L);
         assertThat(principal.getUsername()).isEqualTo("user");
-        assertThat(principal.getPassword()).isEqualTo("");
+        assertThat(principal.getPassword()).isEmpty();
         assertThat(principal.getEmail()).isEqualTo("user@safecornerscoffee.com");
         assertThat(principal.getAuthorities().stream().map(GrantedAuthority::getAuthority)).contains("ROLE_USER", "ROLE_ADMIN");
     }
