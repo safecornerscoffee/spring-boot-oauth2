@@ -15,6 +15,8 @@
 - [ ] AccessToken
 - [ ] RefreshToken
 - [ ] [@Pre and @Post Annotations](https://docs.spring.io/spring-security/site/docs/current/reference/html5/#el-pre-post-annotations)
+- [x] Jwt Authentication Using Cookies 
+- [ ] Jwt Authentication Using Bearer Authorization
 
 ## Role Hierarchy
 권한 인가 과정
@@ -48,4 +50,7 @@ public RoleHierarchy roleHierarchy() {
 - [Spring Reference - Authorization Architecture](https://docs.spring.io/spring-security/site/docs/current/reference/html5/#authz-arch)
 
 ### JWT
+- [Java JWT: JSON Web Token for Java and Android](https://github.com/jwtk/jjwt)
 - [Stack Overflow - How to identify if the OAuth token has expired?](https://stackoverflow.com/questions/30826726/how-to-identify-if-the-oauth-token-has-expired)
+- [Where to Store your JWTs – Cookies vs HTML5 Web Storage](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage)
+- [Spring Security with JWT for REST API](https://www.toptal.com/spring/spring-security-tutorial)
