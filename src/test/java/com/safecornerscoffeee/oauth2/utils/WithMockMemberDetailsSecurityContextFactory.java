@@ -1,8 +1,8 @@
 package com.safecornerscoffeee.oauth2.utils;
 
-import com.safecornerscoffeee.oauth2.member.domain.Role;
 import com.safecornerscoffeee.oauth2.member.domain.Member;
-import com.safecornerscoffeee.oauth2.member.MemberDetails;
+import com.safecornerscoffeee.oauth2.member.domain.Role;
+import com.safecornerscoffeee.oauth2.member.security.MemberDetails;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;

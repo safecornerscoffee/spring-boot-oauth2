@@ -1,6 +1,6 @@
 package com.safecornerscoffeee.oauth2.utils;
 
-import com.safecornerscoffeee.oauth2.member.MemberDetails;
+import com.safecornerscoffeee.oauth2.member.security.MemberDetails;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.security.core.Authentication;

@@ -1,4 +1,4 @@
-package com.safecornerscoffeee.oauth2.member;
+package com.safecornerscoffeee.oauth2.member.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

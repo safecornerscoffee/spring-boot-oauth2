@@ -1,4 +1,4 @@
-package com.safecornerscoffeee.oauth2.member;
+package com.safecornerscoffeee.oauth2.member.security;
 
 import com.safecornerscoffeee.oauth2.member.repository.MemberRepository;
 import com.safecornerscoffeee.oauth2.member.repository.RoleRepository;

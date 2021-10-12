@@ -1,4 +1,4 @@
-package com.safecornerscoffeee.oauth2.member;
+package com.safecornerscoffeee.oauth2.member.security;
 
 import com.safecornerscoffeee.oauth2.member.domain.Member;
 import com.safecornerscoffeee.oauth2.member.domain.Privilege;
@@ -7,7 +7,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class MemberDetails implements UserDetails {

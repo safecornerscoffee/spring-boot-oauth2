@@ -1,6 +1,6 @@
 package com.safecornerscoffeee.oauth2.utils;
 
-import com.safecornerscoffeee.oauth2.member.MemberDetailsService;
+import com.safecornerscoffeee.oauth2.member.security.MemberDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
