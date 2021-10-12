@@ -46,3 +46,6 @@ public RoleHierarchy roleHierarchy() {
 - [Spring Security Reference - Testing JWT Authentication](https://docs.spring.io/spring-security/site/docs/current/reference/html5/#testing-jwt)
 - [Spring Guide - Creating API Documentation with Restdocs](https://spring.io/guides/gs/testing-restdocs/)
 - [Spring Reference - Authorization Architecture](https://docs.spring.io/spring-security/site/docs/current/reference/html5/#authz-arch)
+
+### JWT
+- [Stack Overflow - How to identify if the OAuth token has expired?](https://stackoverflow.com/questions/30826726/how-to-identify-if-the-oauth-token-has-expired)
