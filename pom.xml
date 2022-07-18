@@ -16,10 +16,12 @@
     <description>Sample project for Spring Boot OAuth 2.0</description>
     <properties>
         <java.version>17</java.version>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/aggregate-report/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <modules>
         <module>jwt-sample</module>
+        <module>aggregate-report</module>
     </modules>
 
     <build>
