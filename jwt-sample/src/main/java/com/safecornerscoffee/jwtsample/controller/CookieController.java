@@ -74,7 +74,7 @@ public class CookieController {
         log.debug("logout() called");
         Cookie cookie = new Cookie(X_AUTH_TOKEN, null);
         cookie.setHttpOnly(true);
-        cookie.setSecure(false);
+        cookie.setSecure(false); //enable when tls supported.
         cookie.setMaxAge(0);
         cookie.setPath("/");
         response.addCookie(cookie);

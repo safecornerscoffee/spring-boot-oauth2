@@ -20,7 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @ConditionalOnProperty(value = "spring.profiles.active", havingValue = "cookie")
 @Configuration
-@EnableWebSecurity(debug=true)
+@EnableWebSecurity(debug=true) // deactivated debug mode in production
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @RequiredArgsConstructor
 public class CookieSecurityConfig extends WebSecurityConfigurerAdapter {

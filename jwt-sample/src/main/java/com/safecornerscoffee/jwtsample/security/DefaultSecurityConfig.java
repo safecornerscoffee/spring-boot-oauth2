@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @ConditionalOnProperty(value = "spring.profiles.active", havingValue = "default")
 @Configuration
-@EnableWebSecurity(debug = true)
+@EnableWebSecurity(debug = true) // deactivated debug mode in production
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @RequiredArgsConstructor
 public class DefaultSecurityConfig extends WebSecurityConfigurerAdapter {
